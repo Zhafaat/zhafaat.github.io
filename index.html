@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://css.gg/stopwatch.css' rel='stylesheet'>
+</head>
+<!-- game tebak gambar hewan terdiri dari 10 babak, setiap babak ada 1 gambar dan masing masing gambar ada 4 pilihan jawaban, dengan satu jawaban benar -->
+<body>
+    <div id="box-head">
+        <form action="" style="display: flex;">
+            <div id="box-input">
+                <label for="input-name">Name :  
+                </label>
+                <input id="input-name" type="text" placeholder="name" required>
+                <label for="input-age">Age :    
+                </label>
+                <input type="number" id="input-age" placeholder="age" required>
+            </div>
+            <button id="start" class="button-19 start-button">Start</button>
+        </form>
+        <!-- jika tombol start di klik, jika value dari #input-age kurang dari 4 tahun dan lebih dari 6 tahun maka akan muncul warning
+            jika value dari #input-age 4-6 maka innerHTML pada #score-text menjadi 0 dan #time-text akan berjalan dengan durasi 15 Detik
+            game di mulai dengan value dari #input-name akan muncul di #name babak pertama di mulai
+        -->
+        <h2 id="score-text">Scoreboard</h2>
+        <div style="display: flex;">
+            <i class="gg-stopwatch" style="margin-right:10px; align-self: center;"></i>
+            <h2 id="time-text">Time Indicator</h2>
+        </div>
+    </div>
+    <div id="box-body">
+        <div id="box-image">
+            <div id="player-name">
+                <h4 id="player">Player : </h4>
+                <h4 id="name"></h4>
+            </div>
+            <!-- img akan berganti sebanyak 10 kali, dan berganti ketika button pada #box-option di click
+            img pertama akan muncul ketika tombol .start-button di click dan value #input-age 4-6 tahun -->
+
+            <img src="./logo.png" alt="game box-image">
+            <div id="alert">
+                <h2 style="margin: 16px;">Alert!!!</h2>
+                <p style="margin: 0;">This game is only for children aged 4-6 years.</p>
+                <p style="margin: 0;">If you still want to play press the <button id="play-btn" style="margin: 0;">Play</button>
+                    button.</p>
+            </div>
+            <div id="winner">
+                <h1>Congratulation</h1>
+                <h2 id="yourScore" style="margin: 0"></h2>
+            </div>
+            <p><strong>what animal is this?</strong></p>
+        </div>
+        <!--  semua innerHTML pada button akan berganti dengan nama-nama hewan yang berbeda dengan satu nama hewan yang sesuai dengan img ketika tombol start di clikc
+        jika button dengan jawaban yang benar di click maka img akan berwarna Hijau, #score-text akan bertambah 10, #time-text akan terulang, sistem akan masuk ke babak selanjutnya,
+        jika button dengan jawaban yang salah di tekan maka img akan berwarna merah, #time-text akan terulang, sistem akan masuk ke babak selanjutnya.
+        game akan berlanjut sampai 10 babak.
+        di akhir game setelah button di babak ke sepuluh di clikc maka #time-text bertuliskan "Time Indikator", img akan kembali ke Gambar Game, setiap button kembali berisikan A, B, C, D
+    -->
+        <div id="box-option">
+            <button class="button-19 button1"><h1>A</h1></button>
+            <button class="button-19 button2"><h1>B</h1></button>
+            <button class="button-19 button3"><h1>C</h1></button>
+            <button class="button-19 button4"><h1>D</h1></button>
+        </div>
+    </div>
+    <!-- game selanjutnya di mulai ketika button start di clikc -->
+    <script src="index.js"></script>    
+</body>
+</html>
