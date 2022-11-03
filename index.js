@@ -9,7 +9,7 @@ const time  = document.getElementById("time-text");
 const final = document.getElementById("winner");
 const finalScore = document.getElementById("yourScore");
 const play = document.getElementById("play-btn");
-let sekon = 4;
+let sekon = 5;
 let indexSoal = 0;
 let nilai = 0;
 let imageList = [
@@ -108,7 +108,7 @@ start.addEventListener("click", function(e){
                         btn2.innerHTML = imageList[indexSoal].option[1];
                         btn3.innerHTML = imageList[indexSoal].option[2];
                         btn4.innerHTML = imageList[indexSoal].option[3];
-                        sekon = 4;
+                        sekon = 5;
                     }
                 }
                 // console.log("tes",indexSoal > 9)
@@ -126,7 +126,7 @@ start.addEventListener("click", function(e){
                     age.value = "";
                     indexSoal = 0;
                     nilai = 0;
-                    sekon = 4;
+                    sekon = 5;
                     start.disabled = false;
                     image.src = "./logo.png";
                     // console.log("lewat");
@@ -186,7 +186,7 @@ play.addEventListener("click", function(e){
                 btn2.innerHTML = imageList[indexSoal].option[1];
                 btn3.innerHTML = imageList[indexSoal].option[2];
                 btn4.innerHTML = imageList[indexSoal].option[3];
-                sekon = 4;
+                sekon = 5;
             }
         }
         // console.log("tes",indexSoal > 9)
@@ -204,7 +204,7 @@ play.addEventListener("click", function(e){
             age.value = "";
             indexSoal = 0;
             nilai = 0;
-            sekon = 4;
+            sekon = 5;
             start.disabled = false;
             image.src = "./logo.png";
             // console.log("lewat");
@@ -231,7 +231,7 @@ btn1.addEventListener("click", function(){
                     btn2.innerHTML = imageList[indexSoal].option[1];
                     btn3.innerHTML = imageList[indexSoal].option[2];
                     btn4.innerHTML = imageList[indexSoal].option[3];
-                    sekon = 4;
+                    sekon = 5;
                 }
             }
         } else if (imageList[indexSoal].option[0] != btn1.innerHTML){
@@ -242,7 +242,7 @@ btn1.addEventListener("click", function(){
                 btn2.innerHTML = imageList[indexSoal].option[1];
                 btn3.innerHTML = imageList[indexSoal].option[2];
                 btn4.innerHTML = imageList[indexSoal].option[3];
-                sekon = 4;
+                sekon = 5;
             }
         }
     }
@@ -262,7 +262,7 @@ btn2.addEventListener("click", function(){
                     btn2.innerHTML = imageList[indexSoal].option[1];
                     btn3.innerHTML = imageList[indexSoal].option[2];
                     btn4.innerHTML = imageList[indexSoal].option[3];
-                    sekon = 4;
+                    sekon = 5;
                 }
             }
         } else if (imageList[indexSoal].option[0] != btn2.innerHTML){
@@ -273,7 +273,7 @@ btn2.addEventListener("click", function(){
                 btn2.innerHTML = imageList[indexSoal].option[1];
                 btn3.innerHTML = imageList[indexSoal].option[2];
                 btn4.innerHTML = imageList[indexSoal].option[3];
-                sekon = 4;
+                sekon = 5;
             }
         }
     }
@@ -293,7 +293,7 @@ btn3.addEventListener("click", function(){
                     btn2.innerHTML = imageList[indexSoal].option[1];
                     btn3.innerHTML = imageList[indexSoal].option[2];
                     btn4.innerHTML = imageList[indexSoal].option[3];
-                    sekon = 4;
+                    sekon = 5;
                 }
             }
         } else if (imageList[indexSoal].option[0] != btn3.innerHTML){
@@ -304,7 +304,7 @@ btn3.addEventListener("click", function(){
                 btn2.innerHTML = imageList[indexSoal].option[1];
                 btn3.innerHTML = imageList[indexSoal].option[2];
                 btn4.innerHTML = imageList[indexSoal].option[3];
-                sekon = 4;
+                sekon = 5;
             }
         }
     }
@@ -324,7 +324,7 @@ btn4.addEventListener("click", function(){
                     btn2.innerHTML = imageList[indexSoal].option[1];
                     btn3.innerHTML = imageList[indexSoal].option[2];
                     btn4.innerHTML = imageList[indexSoal].option[3];
-                    sekon = 4;
+                    sekon = 5;
                 }
             }
         } else if (imageList[indexSoal].option[0] != btn4.innerHTML){
@@ -335,7 +335,7 @@ btn4.addEventListener("click", function(){
                 btn2.innerHTML = imageList[indexSoal].option[1];
                 btn3.innerHTML = imageList[indexSoal].option[2];
                 btn4.innerHTML = imageList[indexSoal].option[3];
-                sekon = 4;
+                sekon = 5;
             }
         }
     }
